@@ -3653,7 +3653,12 @@ input, button, select {
 #loading {
   margin: 0 auto;
   display: block;
-  margin-top: 18%; }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%); }
 
 #load_screen {
   background-color: #fff;
