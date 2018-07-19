@@ -10,25 +10,20 @@
     
     <meta property="og:image" content="img/ogimg.png">
     <meta property="og:image" content="img/ogimg.png" />
-<meta property="og:image:secure_url" content="img/ogimg.png" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="400" />
-<meta property="og:image:height" content="300" />
-    
+    <meta property="og:image:secure_url" content="img/ogimg.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
     
     <meta property="og:title" content="Bildex company">
     <meta property="og:description" content="Site of Bildex company">
-   
     
     <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon/favicon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon.png">
-
    
-<!--    <link rel="stylesheet" href="libs/font-awesome.min.css">-->
     <link rel="stylesheet" href="css/main.css">
-
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#000">
     <!-- Windows Phone -->
@@ -37,307 +32,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 
-    <style>
-        #load_screen{
-            background: #fff;
-            opacity: 1;
-            position: fixed;
-            z-index: 10;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-        }
-        .loader-wrapp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.item-1 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  animation: right-1 4s infinite cubic-bezier(0, 0, 0.49, 1.02);
-  animation-delay: 100ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes right-1 {
-  10% {
-    transform: rotate(250deg) translate(0, 0px);
-  }
-  50%,
-    65% {
-    transform: rotate(250deg) translateX(-100px);
-  }
-  100% {
-    transform: rotate(250deg) translate(0, 0px);
-  }
-}
-.item-1 > * {
-  width: 20px;
-  height: 20px;
-  background: #f583a1;
-  border-radius: 50%;
-  background-color: #e8ddb5;
-}
-
-.item-2 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  animation: right-2 4s infinite cubic-bezier(0, 0, 0.49, 1.02);
-  animation-delay: 200ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes right-2 {
-  10% {
-    transform: rotate(375deg) translate(0, 0px);
-  }
-  50%,
-    65% {
-    transform: rotate(375deg) translateX(-100px);
-  }
-  100% {
-    transform: rotate(375deg) translate(0, 0px);
-  }
-}
-.item-2 > * {
-  width: 20px;
-  height: 20px;
-  background: #f583a1;
-  border-radius: 50%;
-  background-color: #e8ddb5;
-}
-
-.item-3 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  animation: right-3 4s infinite cubic-bezier(0, 0, 0.49, 1.02);
-  animation-delay: 300ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes right-3 {
-  10% {
-    transform: rotate(500deg) translate(0, 0px);
-  }
-  50%,
-    65% {
-    transform: rotate(500deg) translateX(-100px);
-  }
-  100% {
-    transform: rotate(500deg) translate(0, 0px);
-  }
-}
-.item-3 > * {
-  width: 20px;
-  height: 20px;
-  background: #f583a1;
-  border-radius: 50%;
-  background-color: #e8ddb5;
-}
-
-.item-4 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  animation: right-4 4s infinite cubic-bezier(0, 0, 0.49, 1.02);
-  animation-delay: 400ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes right-4 {
-  10% {
-    transform: rotate(625deg) translate(0, 0px);
-  }
-  50%,
-    65% {
-    transform: rotate(625deg) translateX(-100px);
-  }
-  100% {
-    transform: rotate(625deg) translate(0, 0px);
-  }
-}
-.item-4 > * {
-  width: 20px;
-  height: 20px;
-  background: #f583a1;
-  border-radius: 50%;
-  background-color: #b2c9ab;
-}
-
-.item-5 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  animation: right-5 4s infinite cubic-bezier(0, 0, 0.49, 1.02);
-  animation-delay: 500ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes right-5 {
-  10% {
-    transform: rotate(750deg) translate(0, 0px);
-  }
-  50%,
-    65% {
-    transform: rotate(750deg) translateX(-100px);
-  }
-  100% {
-    transform: rotate(750deg) translate(0, 0px);
-  }
-}
-.item-5 > * {
-  width: 20px;
-  height: 20px;
-  background: #f583a1;
-  border-radius: 50%;
-  background-color: #b2c9ab;
-}
-
-.item-6 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  animation: right-6 4s infinite cubic-bezier(0, 0, 0.49, 1.02);
-  animation-delay: 600ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes right-6 {
-  10% {
-    transform: rotate(875deg) translate(0, 0px);
-  }
-  50%,
-    65% {
-    transform: rotate(875deg) translateX(-100px);
-  }
-  100% {
-    transform: rotate(875deg) translate(0, 0px);
-  }
-}
-.item-6 > * {
-  width: 20px;
-  height: 20px;
-  background: #f583a1;
-  border-radius: 50%;
-  background-color: #b2c9ab;
-}
-
-.item-7 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  animation: right-7 4s infinite cubic-bezier(0, 0, 0.49, 1.02);
-  animation-delay: 700ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes right-7 {
-  10% {
-    transform: rotate(1000deg) translate(0, 0px);
-  }
-  50%,
-    65% {
-    transform: rotate(1000deg) translateX(-100px);
-  }
-  100% {
-    transform: rotate(1000deg) translate(0, 0px);
-  }
-}
-.item-7 > * {
-  width: 20px;
-  height: 20px;
-  background: #f583a1;
-  border-radius: 50%;
-  background-color: #92b6b1;
-}
-
-.item-8 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  animation: right-8 4s infinite cubic-bezier(0, 0, 0.49, 1.02);
-  animation-delay: 800ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes right-8 {
-  10% {
-    transform: rotate(1125deg) translate(0, 0px);
-  }
-  50%,
-    65% {
-    transform: rotate(1125deg) translateX(-100px);
-  }
-  100% {
-    transform: rotate(1125deg) translate(0, 0px);
-  }
-}
-.item-8 > * {
-  width: 20px;
-  height: 20px;
-  background: #f583a1;
-  border-radius: 50%;
-  background-color: #92b6b1;
-}
-
-.item-9 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  animation: right-9 4s infinite cubic-bezier(0, 0, 0.49, 1.02);
-  animation-delay: 900ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes right-9 {
-  10% {
-    transform: rotate(1250deg) translate(0, 0px);
-  }
-  50%,
-    65% {
-    transform: rotate(1250deg) translateX(-100px);
-  }
-  100% {
-    transform: rotate(1250deg) translate(0, 0px);
-  }
-}
-.item-9 > * {
-  width: 20px;
-  height: 20px;
-  background: #f583a1;
-  border-radius: 50%;
-  background-color: #92b6b1;
-}
-    </style>
-
-   
-
-
 <body>
- <script type="text/javascript">
-        window.addEventListener("load", function(){
-            var load_screen = document.getElementById("load_screen");
-            document.body.removeChild(load_screen);
-        });
-    </script>
+<!--
+<script type="text/javascript">
+    window.addEventListener("load", function(){
+        var load_screen = document.getElementById("load_screen");
+        document.body.removeChild(load_screen);
+    });
+</script>
+-->
 <div id="load_screen">
-    
     <div id="loading" class="loader-wrapp">
         <div class="item-1"><div></div></div>
         <div class="item-2"><div></div></div>
@@ -356,9 +60,9 @@
         <div class="preheader hidden-xs hidden-sm">
             <div class="row">
                 <div class="social-bar col-lg-8 col-md-8">
-                    <a href="" class="social-bar__item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="" class="social-bar__item"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="" class="social-bar__item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="social-bar__item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="social-bar__item"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" class="social-bar__item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </div>
                 <div class="info col-lg-4 col-md-4">
                     <p class="tel">(067) 462-06-07</p>
@@ -383,23 +87,23 @@
                 <div class="col-lg-6 hidden-sm hidden-xs hidden-md">
                     <nav>
                         <ul class="topmenu">
-                            <li><a href="" class="active">О нас<span class="fa fa-angle-down"></span></a>
+                            <li><a href="#" class="active">О нас<span class="fa fa-angle-down"></span></a>
                                 <ul class="submenu">
-                                    <li><a href="">меню второго уровня</a></li>
-                                    <li><a href="">меню второго уровня</a></li>
-                                    <li><a href="">меню второго уровня</a></li>
+                                    <li><a href="#">меню второго уровня</a></li>
+                                    <li><a href="#">меню второго уровня</a></li>
+                                    <li><a href="#">меню второго уровня</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Проекты</a></li>
-                            <li><a href="">Услуги<span class="fa fa-angle-down"></span></a>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Услуги<span class="fa fa-angle-down"></span></a>
                                 <ul class="submenu">
-                                    <li><a href="">меню второго уровня</a></li>
-                                    <li><a href="">меню второго уровня</a></li>
-                                    <li><a href="">меню второго уровня</a></li>
+                                    <li><a href="#">меню второго уровня</a></li>
+                                    <li><a href="#">меню второго уровня</a></li>
+                                    <li><a href="#">меню второго уровня</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Новости</a></li>
-                            <li><a href="">Контакты</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -437,7 +141,7 @@
             <img src="img/gen-podryad.png" alt="" class="about-card__img">
             <div class="about-card__title">Генеральный подряд</div>
             <div class="about-card__descr">Мы берем на себя полную отстветсвенность за качество выполняемых работ</div>
-            <a href="" class="about-card__link">
+            <a href="#" class="about-card__link">
                     <span class="hover-text">Узнать больше</span>
                     <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                     <img class="arrow-link" src="img/normal-arrow-link.png" alt="">
@@ -451,7 +155,7 @@
             <img src="img/stroy-rab.png" alt="" class="about-card__img">
             <div class="about-card__title">Генеральный подряд</div>
             <div class="about-card__descr">Мы берем на себя полную отстветсвенность за качество выполняемых работ</div>
-            <a href="" class="about-card__link">
+            <a href="#" class="about-card__link">
                     <span class="hover-text">Узнать больше</span>
                     <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                     <img class="arrow-link" src="img/normal-arrow-link.png" alt="">
@@ -465,7 +169,7 @@
             <img src="img/otdel-rab.png" alt="" class="about-card__img">
             <div class="about-card__title">Генеральный подряд</div>
             <div class="about-card__descr">Мы берем на себя полную отстветсвенность за качество выполняемых работ</div>
-            <a href="" class="about-card__link">
+            <a href="#" class="about-card__link">
                     <span class="hover-text">Узнать больше</span>
                     <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                     <img class="arrow-link" src="img/normal-arrow-link.png" alt="">
@@ -479,7 +183,7 @@
             <img src="img/otdel-rab.png" alt="" class="about-card__img">
             <div class="about-card__title">Генеральный подряд</div>
             <div class="about-card__descr">Мы берем на себя полную отстветсвенность за качество выполняемых работ</div>
-            <a href="" class="about-card__link">
+            <a href="#" class="about-card__link">
                     <span class="hover-text">Узнать больше</span>
                     <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                     <img class="arrow-link" src="img/normal-arrow-link.png" alt="">
@@ -529,7 +233,7 @@
         <div class="proj-card col-lg-7 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12">
             <img src="img/proj-1.png" alt="" class="proj-card__img">
             <p class="proj-card__descr col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12">Офис азиатской компании</p>
-            <a href="" class="proj-card__link col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-12" id="proj1">Узнать больше
+            <a href="#" class="proj-card__link col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-12" id="proj1">Узнать больше
                 <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                 <img class="project-arrow-link" src="img/normal-arrow-link.png" alt="">
             </a>
@@ -537,14 +241,14 @@
                 <p class="rotate">Офисные помещения</p>
             </div>
         </div>
-        <div class="project-info col-lg-4 col-md-12 col-sm-12 hidden-xs" id="info1">
-            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6">
+        <div class="project-info col-lg-4 col-md-12 col-sm-12 col-xs-12" id="info1">
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
                 <p class="project-info__title">Факты о проекте</p>
                 <p class="project-info__year">Год: 2014</p>
                 <p class="project-info__area">Площадь: 117 м2</p>
                 <p class="project-info__contora">Заказчик: Segoe Hitachi</p>
             </div>
-            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6">
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
                 <p class="project-info__descr">Разработка проекта офисного помещения, как при строительстве, так и при ремонте офисов, с учетом требований к рабочим местам сотрудников, а также с учетом условий, повышающих их работоспособность </p>
                 <p class="project-info__descr">Разработка проектов инженерных сетей для офиса – вытяжной и кондиционирующей систем, электропроводки, компьютерных сетей и т.д.</p>
             </div>
@@ -555,7 +259,7 @@
         <div class="proj-card col-lg-7 col-lg-offset-1 col-lg-push-4 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12">
             <img src="img/proj-1.png" alt="" class="proj-card__img">
             <p class="proj-card__descr col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12">Офис азиатской компании</p>
-            <a href="" class="proj-card__link col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-12" id="proj2">Узнать больше
+            <a href="#" class="proj-card__link col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-12" id="proj2">Узнать больше
                 <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                 <img class="project-arrow-link" src="img/normal-arrow-link.png" alt="">
             </a>
@@ -563,14 +267,14 @@
                 <p class="rotate">Офисные помещения</p>
             </div>
         </div>
-        <div class="project-info col-lg-4 col-lg-pull-8 col-md-12 col-sm-12 hidden-xs" id="info2">
-            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6">
+        <div class="project-info col-lg-4 col-lg-pull-8 col-md-12 col-sm-12 col-xs-12" id="info2">
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
                 <p class="project-info__title">Факты о проекте</p>
                 <p class="project-info__year">Год: 2014</p>
                 <p class="project-info__area">Площадь: 117 м2</p>
                 <p class="project-info__contora">Заказчик: Segoe Hitachi</p>
             </div>
-            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6">
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
                 <p class="project-info__descr">Разработка проекта офисного помещения, как при строительстве, так и при ремонте офисов, с учетом требований к рабочим местам сотрудников, а также с учетом условий, повышающих их работоспособность </p>
                 <p class="project-info__descr">Разработка проектов инженерных сетей для офиса – вытяжной и кондиционирующей систем, электропроводки, компьютерных сетей и т.д.</p>
             </div>
@@ -581,7 +285,7 @@
         <div class="proj-card col-lg-7 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12">
             <img src="img/proj-1.png" alt="" class="proj-card__img">
             <p class="proj-card__descr col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12">Офис азиатской компании</p>
-            <a href="" class="proj-card__link col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-12" id="proj3">Узнать больше
+            <a href="#" class="proj-card__link col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-12" id="proj3">Узнать больше
                 <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                 <img class="project-arrow-link" src="img/normal-arrow-link.png" alt="">
             </a>
@@ -589,14 +293,14 @@
                 <p class="rotate">Офисные помещения</p>
             </div>
         </div>
-        <div class="project-info col-lg-4 col-md-12 col-sm-12 hidden-xs" id="info3">
-            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6">
+        <div class="project-info col-lg-4 col-md-12 col-sm-12 col-xs-12" id="info3">
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
                 <p class="project-info__title">Факты о проекте</p>
                 <p class="project-info__year">Год: 2014</p>
                 <p class="project-info__area">Площадь: 117 м2</p>
                 <p class="project-info__contora">Заказчик: Segoe Hitachi</p>
             </div>
-            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6">
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
                 <p class="project-info__descr">Разработка проекта офисного помещения, как при строительстве, так и при ремонте офисов, с учетом требований к рабочим местам сотрудников, а также с учетом условий, повышающих их работоспособность </p>
                 <p class="project-info__descr">Разработка проектов инженерных сетей для офиса – вытяжной и кондиционирующей систем, электропроводки, компьютерных сетей и т.д.</p>
             </div>
@@ -613,7 +317,7 @@
             <img src="img/dogovor.png" class="work-item__img" alt="">
             <p class="work-item__title">Договор генподряда</p>
             <p class="work-item__descr">Четкое следование утвержденным планам и графикам, не бросаем клиента после сдачи объект</p>
-            <a href="" class="work-item__link">
+            <a href="#" class="work-item__link">
                 <span class="hover-text work-text">Узнать больше</span>
                 <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                 <img class="arrow-link" src="img/normal-arrow-link.png" alt="">
@@ -623,7 +327,7 @@
             <img src="img/komplex.png" class="work-item__img" alt="">
             <p class="work-item__title">Комплексное решение</p>
             <p class="work-item__descr">Делаем все работы полностью под ключ</p>
-            <a href="" class="work-item__link">
+            <a href="#" class="work-item__link">
                 <span class="hover-text work-text">Узнать больше</span>
                 <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                 <img class="arrow-link" src="img/normal-arrow-link.png" alt="">
@@ -633,7 +337,7 @@
             <img src="img/avtorskiy.png" class="work-item__img" alt="">
             <p class="work-item__title">Авторский и технический надзор проекта</p>
             <p class="work-item__descr">Прорабское управление и контроль объекта на мест</p>
-            <a href="" class="work-item__link">
+            <a href="#" class="work-item__link">
                 <span class="hover-text work-text">Узнать больше</span>
                 <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                 <img class="arrow-link" src="img/normal-arrow-link.png" alt="">
@@ -643,7 +347,7 @@
             <img src="img/dogovor2.png" class="work-item__img" alt="">
             <p class="work-item__title">Договор на послегарантийное обслуживание</p>
             <p class="work-item__descr"></p>
-            <a href="" class="work-item__link">
+            <a href="#" class="work-item__link">
                 <span class="hover-text work-text">Узнать больше</span>
                 <img class="arrow-link_active" src="img/active-arrow-link.png" alt="">
                 <img class="arrow-link" src="img/normal-arrow-link.png" alt="">
@@ -654,26 +358,26 @@
 
 <div class="partner">
     <div class="container">
-       <h2>наши партнеры</h2>
-    </div>
-    <div class="carusel owl-carousel owl-theme">
-        <div class="item">
-            <img src="img/p-logo2.png" alt="" class="partner-logo">
-        </div>
-        <div class="item">
-            <img src="img/p-logo3.png" alt="" class="partner-logo">
-        </div>
-        <div class="item">
-            <img src="img/p-logo5.png" alt="" class="partner-logo">
-        </div>
-        <div class="item">
-            <img src="img/p-logo6.png" alt="" class="partner-logo">
-        </div>
-        <div class="item">
-            <img src="img/p-logo7.png" alt="" class="partner-logo">
-        </div>
-        <div class="item">
-            <img src="img/p-logo8.png" alt="" class="partner-logo">
+        <h2>наши партнеры</h2>
+        <div class="carusel owl-carousel owl-theme">
+            <div class="item">
+                <img src="img/p-logo2.png" alt="" class="partner-logo">
+            </div>
+            <div class="item">
+                <img src="img/p-logo3.png" alt="" class="partner-logo">
+            </div>
+            <div class="item">
+                <img src="img/p-logo5.png" alt="" class="partner-logo">
+            </div>
+            <div class="item">
+                <img src="img/p-logo6.png" alt="" class="partner-logo">
+            </div>
+            <div class="item">
+                <img src="img/p-logo7.png" alt="" class="partner-logo">
+            </div>
+            <div class="item">
+                <img src="img/p-logo8.png" alt="" class="partner-logo">
+            </div>
         </div>
     </div>
 </div>
@@ -724,7 +428,7 @@
                 <label for="company" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 label">Название компании</label>
                 <input type="text" class="col-lg-8 col-md-8 col-sm-8 col-xs-12" placeholder=" " name="company" id="company" />
             </div>
-            <a href="" class="submit col-lg-4 col-md-4 col-sm-4 col-xs-12">Отправить
+            <a href="#" class="submit col-lg-4 col-md-4 col-sm-4 col-xs-12">Отправить
             <img src="img/teleg.png" alt="" class="teleg"></a>
         </forma>
     </div>
@@ -744,9 +448,9 @@
                 <img src="img/footer-logo.png" alt="" class="logo__footer">
             </div>
             <div class="social-bar">
-                <a href="" class="footer-bar__item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="" class="footer-bar__item"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="" class="footer-bar__item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" class="footer-bar__item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" class="footer-bar__item"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="footer-bar__item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="col-lg-6 col-md-9">
