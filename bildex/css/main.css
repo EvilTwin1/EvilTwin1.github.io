@@ -4850,7 +4850,7 @@ h1 {
     line-height: 27px;
     padding: 0; }
     .proj-card__descr::before {
-      content: "";
+      content: " ";
       display: block;
       position: absolute;
       top: 12px;
@@ -5161,7 +5161,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
     text-transform: uppercase; }
   .adres__content {
     color: black;
-    ont-family: PTAstraSans-Italic;
+    font-family: PTAstraSans-Italic;
     font-size: 12px; }
 
 .phone {
@@ -5210,7 +5210,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
 .submenu-fix {
   position: absolute;
-  left: 1;
+  left: 1px;
   top: 48px;
   -webkit-transition: .3s linear;
   -o-transition: .3s linear;
@@ -5336,7 +5336,8 @@ input:invalid:not(:placeholder-shown) + .form__error {
         color: #000;
         ontent: ""; }
     .proj-card__link {
-      margin-top: 0px; }
+      margin-top: 21px;
+      margin-bottom: 30px; }
   .div-nepar2 {
     margin-top: 0px; }
   .div-par1 {
