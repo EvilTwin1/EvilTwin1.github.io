@@ -4,4 +4,4 @@ h1 заголовок первого уровня
 ***
 Второй абзац
 
-![Alt text](/img/logo.png "Optional Title")
+![Alt text](../img/logo.png "Optional Title")
