@@ -4800,6 +4800,10 @@ h1 {
   display: none;
   padding-left: 10px; }
 
+aydio{
+    opacity: 0;
+}
+
 /*---------- preheader start ----------*/
 .counter {
   background-image: url(../img/counter-bg.png);
