@@ -38,10 +38,10 @@
 	<body class="body">
 		<main>
 			<div class="top-line ">
-				<div class="container top-line--wrapp">
-					<div class="right-area">
+				<div class="container-fluid top-line--wrapp">
+<!--					<div class="right-area">-->
 						<div class="logo">
-							<img src="images/logo.png" alt="" class="logo__img">
+							<img src="images/logo.svg" alt="" class="logo__img">
 						</div>
 						<nav>
 							<ul class="menu">
@@ -53,7 +53,7 @@
 								<li class="menu-item"><a class="menu-link" data-dark="white" href="">Стать диллером</a></li>
 							</ul>
 						</nav>
-					</div>
+<!--					</div>-->
 					<div class="right-area">
 						<div class="switch">
 							<input type="checkbox" class="checkbox" id="chk" />
@@ -97,21 +97,22 @@
 					</div>
 					<div class="about-us__info">
 						<h2 class="section-title" data-dark="green">О нас</h2>
-						<p class="about-us__text" data-dark="white">
-							Компания <span class="green">ARVITUM</span> является эксклюзивным представителем немецкой фирмы PEDCAD в Украине.
+
+						<p class="about-us__text" data-dark="white">Компания <span class="green">ARVITUM</span> является эксклюзивным представителем немецкой фирмы PEDCAD в Украине.
 							Три десятилетия исследований в области электронного анализа нагрузок на стопы,
-							достижения в высокоточном цифровом моделировании, а также изготовлении стелек для обуви вывели
-							PEDCAD на уровень новатора в своей сфере. Ноу-хау создания стельки в <span class="green">ARVITUM</span>
-							заключается в абсолютной точности диагностики и полностью автоматизированном производстве
-						</p>
-						<a href="" class="about-us__btn">подробнее</a>
+							достижения в высокоточном цифровом моделировании,
+							а также изготовлении стелек для обуви вывели PEDCAD на уровень новатора в своей сфере.</p>
+						<p class="about-us__text" data-dark="white">Ноу-хау создания стельки в <span class="green">ARVITUM</span> заключается в абсолютной точности диагностики и полностью автоматизированном производстве.
+							Точность диагностики обеспечивает максимальное соответствие изделия структуре стопы заказчика, что позволяет разгрузить стопы,
+							избавить клиента от болевых ощущений, снять чувство усталости, а также оказывает лечебное и профилактическое действие.</p>
+						<a href="" class="about-us__btn">Подробнее</a>
 					</div>
 				</div>
 
 				<div class="section-wrapp count-section">
 					<div class="count-item">
 						<img src="images/manufacturing.svg" class="count-item__img" alt="">
-						<p class="count-item__number">65000</p>
+						<p class="count-item__number">65 000</p>
 						<p class="count-item__text" data-dark="white">изготовленно более 65 000 пар ортедических стелек</p>
 					</div>
 					<div class="count-item">
@@ -126,7 +127,7 @@
 					</div>
 					<div class="count-item">
 						<img src="images/diagnostic.svg" class="count-item__img" alt="">
-						<p class="count-item__number">100000</p>
+						<p class="count-item__number">100 000</p>
 						<p class="count-item__text" data-dark="white">всего продиагностировано более 100 000 клиентов</p>
 					</div>
 				</div>
@@ -337,15 +338,24 @@
 
 			<footer class="footer">
 				<div class="section-wrapp">
-					<ul class="footer-menu">
-						<li class="footer-menu-item"><a href="" class="footer-menu-link">Одесса</a></li>
-						<li class="footer-menu-item"><a href="" class="footer-menu-link">Киев</a></li>
-						<li class="footer-menu-item"><a href="" class="footer-menu-link">Днепр</a></li>
-						<li class="footer-menu-item"><a href="" class="footer-menu-link"><img src="images/footer-logo.svg" alt=""></a></li>
-						<li class="footer-menu-item"><a href="" class="footer-menu-link">Товары</a></li>
-						<li class="footer-menu-item"><a href="" class="footer-menu-link">Контакты</a></li>
-						<li class="footer-menu-item"><a href="" class="footer-menu-link">Стать дилером</a></li>
-					</ul>
+					<div class="menu-wrapp">
+						<ul class="footer-menu footer-menu--left">
+							<li class="footer-menu-item"><a href="" class="footer-menu-link">Одесса</a></li>
+							<li class="footer-menu-item"><a href="" class="footer-menu-link">Киев</a></li>
+							<li class="footer-menu-item"><a href="" class="footer-menu-link">Днепр</a></li>
+						</ul>
+						<div class="footer-logo">
+							<img src="images/footer-logo.svg" class="footer-logo__img" alt="">
+						</div>
+
+						<ul class="footer-menu footer-menu--right">
+							<li class="footer-menu-item"><a href="" class="footer-menu-link"></a></li>
+							<li class="footer-menu-item"><a href="" class="footer-menu-link">Товары</a></li>
+							<li class="footer-menu-item"><a href="" class="footer-menu-link">Контакты</a></li>
+							<li class="footer-menu-item"><a href="" class="footer-menu-link">Стать дилером</a></li>
+						</ul>
+					</div>
+
 					<div class="social">
 						<a href="" class="social__item">
 							<i class="fab fa-instagram social__icon"></i>
