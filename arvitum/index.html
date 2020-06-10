@@ -45,12 +45,12 @@
 						</div>
 						<nav>
 							<ul class="menu">
-								<li class="menu-item"><a class="menu-link" href="">Главная</a></li>
-								<li class="menu-item"><a class="menu-link" href="">О нас</a></li>
-								<li class="menu-item"><a class="menu-link" href="">Товары</a></li>
-								<li class="menu-item"><a class="menu-link" href="">Блог</a></li>
-								<li class="menu-item"><a class="menu-link" href="">Контакты</a></li>
-								<li class="menu-item"><a class="menu-link" href="">Стать диллером</a></li>
+								<li class="menu-item"><a class="menu-link active" data-dark="light-gray" href="">Главная</a></li>
+								<li class="menu-item"><a class="menu-link" data-dark="light-gray" href="">О нас</a></li>
+								<li class="menu-item"><a class="menu-link" data-dark="light-gray" href="">Товары</a></li>
+								<li class="menu-item"><a class="menu-link" data-dark="light-gray" href="">Блог</a></li>
+								<li class="menu-item"><a class="menu-link" data-dark="light-gray" href="">Контакты</a></li>
+								<li class="menu-item"><a class="menu-link" data-dark="white" href="">Стать диллером</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -58,8 +58,6 @@
 						<div class="switch">
 							<input type="checkbox" class="checkbox" id="chk" />
 							<label class="label" for="chk">
-<!--								<i class="fas fa-moon"></i>-->
-<!--								<i class="fas fa-sun"></i>-->
 								<div class="ball">
 									<img src="images/sun.svg" class="sun">
 									<img src="images/moon.svg" class="moon">
@@ -92,6 +90,50 @@
 				</div>
 			</div>
 
+			<div class="about-us">
+				<div class="section-wrapp about-us__section">
+					<div class="big-logo-wrapp ">
+						<img src="images/big-logo.svg" alt="" class="big-logo-img">
+					</div>
+					<div class="about-us__info">
+						<h2 class="section-title" data-dark="green">О нас</h2>
+						<p class="about-us__text">
+							Компания <span class="green">ARVITUM</span> является эксклюзивным представителем немецкой фирмы PEDCAD в Украине.
+							Три десятилетия исследований в области электронного анализа нагрузок на стопы, достижения в высокоточном цифровом моделировании,
+							а также изготовлении стелек для обуви вывели PEDCAD на уровень новатора в своей сфере.
+							Ноу-хау создания стельки в <span class="green">ARVITUM</span> заключается в абсолютной точности диагностики и полностью автоматизированном производстве.
+							Точность диагностики обеспечивает максимальное соответствие изделия структуре стопы заказчика,
+							что позволяет разгрузить стопы, избавить клиента от болевых ощущений,
+							снять чувство усталости, а также оказывает лечебное и профилактическое действие.
+						</p>
+						<a href="" class="about-us__btn">подробнее</a>
+					</div>
+				</div>
+
+				<div class="section-wrapp count-section">
+					<div class="count-item">
+						<img src="images/manufacturing.svg" class="count-item__img" alt="">
+						<p class="count-item__number">65000</p>
+						<p class="count-item__text">изготовленно более 65 000 пар ортедических стелек</p>
+					</div>
+					<div class="count-item">
+						<img src="images/time.svg" class="count-item__img" alt="">
+						<p class="count-item__number">6</p>
+						<p class="count-item__text">6 лет опыта на рынке</p>
+					</div>
+					<div class="count-item">
+						<img src="images/partner.svg" class="count-item__img" alt="">
+						<p class="count-item__number">60</p>
+						<p class="count-item__text">более 60 партнеров</p>
+					</div>
+					<div class="count-item">
+						<img src="images/diagnostic.svg" class="count-item__img" alt="">
+						<p class="count-item__number">100000</p>
+						<p class="count-item__text">всего продиагностировано более 100 000 клиентов</p>
+					</div>
+				</div>
+
+			</div>
 
 			<div class="products">
 				<div class="section-wrapp">
@@ -163,10 +205,6 @@
 				</div>
 				<a href="" class="btn-outline btn-more">перейти в каталог</a>
 			</div>
-
-
-
-
 
 			<div class="review">
 				<div class="section-wrapp">
@@ -266,6 +304,66 @@
 				</div>
 			</div>
 
+			<div class="map">
+				<div class="section-wrapp">
+					<h2 class="section-title map-title" data-dark="white">Диагностические центры</h2>
+				</div>
+				<div class="section-wrapp map-section">
+					<div class="map-item">
+						<p class="map-item__heading"><i class="fas fa-map-marker-alt map-item__icon"></i>Одесса</p>
+						<p class="map-item__address">пр-т Шевченко, 4Б</p>
+						<a href="tel:380009997733" class="map-item__tel">+38 000 999 77 33</a>
+						<a href="mailto:info@arvitum.com" class="map-item__email">info@arvitum.com</a>
+						<a href="" class="map-item__on-map">на карте</a>
+					</div>
+					<div class="map-item">
+						<p class="map-item__heading"><i class="fas fa-map-marker-alt map-item__icon"></i>Киев</p>
+						<p class="map-item__address">ул. Антоновича, 13</p>
+						<a href="tel:380009997733" class="map-item__tel">+38 000 999 77 33</a>
+						<a href="mailto:info@arvitum.com" class="map-item__email">info@arvitum.com</a>
+						<a href="" class="map-item__on-map">на карте</a>
+					</div>
+					<div class="map-item">
+						<p class="map-item__heading"><i class="fas fa-map-marker-alt map-item__icon"></i>Днепр</p>
+						<p class="map-item__address">ул. Гусенко, 17</p>
+						<a href="tel:380009997733" class="map-item__tel">+38 000 999 77 33</a>
+						<a href="mailto:info@arvitum.com" class="map-item__email">info@arvitum.com</a>
+						<a href="" class="map-item__on-map">на карте</a>
+					</div>
+					<div class="map-item map-item--redirect">
+						<img src="images/on-map.svg" class="map-item__icon">
+						<p class="map-item__text">Посмотреть все филиалы на карте</p>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer">
+				<div class="section-wrapp">
+					<ul class="footer-menu">
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Одесса</a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Киев</a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Днепр</a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link"><img src="images/footer-logo.svg" alt=""></a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Товары</a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Контакты</a></li>
+						<li class="footer-menu-item"><a href="" class="footer-menu-link">Стать дилером</a></li>
+					</ul>
+					<div class="social">
+						<a href="" class="social__item">
+							<i class="fab fa-instagram social__icon"></i>
+						</a>
+						<a href="" class="social__item">
+							<i class="fab fa-facebook-f social__icon"></i>
+						</a>
+						<a href="" class="social__item">
+							<i class="fab fa-youtube social__icon"></i>
+						</a>
+					</div>
+					<p class="copy">2020 © ARVITUM </p>
+
+				</div>
+
+			</footer>
 		</main>
 
 		<script src="js/script.min.js"></script>
