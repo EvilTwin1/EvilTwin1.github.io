@@ -26,37 +26,14 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        h1{
-            font-family: Roboto Condensed;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 47px;
-            letter-spacing: 0.1em;
-            color: #FFFFFF;
-            margin-left: 120px;
-            /* max-width: 334px; */
-            /* width: 100%; */
-        }
-        .content-about p{
-            font-family: Roboto Condensed;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.2em;
-            color: #FFFFFF;
-            max-width: 550px;
-            width: 100%;
-            padding-left: 120px;
-            padding-bottom: 22px;
-        }
-    </style>
 </head>
 
 <body class="body">
 <main>
     <aside>
-        <div class="close"></div>
+        <div class="close">
+            <img src="images/close-btn.svg" alt="">
+        </div>
         <a href="index.html" class="logo">
             <img src="images/Group%2064.png" alt="" class="logo__img">
         </a>
@@ -81,34 +58,39 @@
             </a>
         </div>
     </aside>
-    <div class="mobile-header">
-        <a href="index.html" style="display: block">
-            <img src="images/Group%2064.png" alt="" class="logo__img">
-        </a>
-        <img src="images/burger.png" alt="" class="burger">
-    </div>
+    
     <div class="content-about">
+        <div class="mobile-header">
+            <a href="index.html" style="display: block">
+                <img src="images/Group%2064.png" alt="" class="logo__img">
+            </a>
+            <img src="images/burger.png" alt="" class="burger">
+        </div>
         <div id="top"></div>
+        <div class="mobile-wrapp">
+            <img src="images/hi.svg" alt="" class="hi-mob">
+            <img src="images/Anya495.png" alt="" class="girl-mob">
+        </div>
         <img src="images/Anya495.png" alt="" class="girl">
         <img src="images/hi.svg" alt="" class="hi">
-        <h1>I’m Anya,<br>your tattoo artist</h1>
-        <p>
+        <h1 class="about-title">I’m Anya,<br>your tattoo artist</h1>
+        <p class="about-text">
             I was born in Ukraine. Since I was 1.5 year old, my parents already realised, that I’m going to be a creative person - I painted everything around me.
         </p>
-        <p>
+        <p class="about-text">
             So I became makeup artist for theatre, movie industry and tv show. I worked in movie industry for a couple years. This experience definitely helped me to become a stronger person...
         </p>
-        <p>
+        <p class="about-text">
             At 22 year old I decided to be a tattoo artist.So I found the mentor and started my new existing career. I never stop studying and I visite lots of workshops, classes, individual lessons to improve my skills.
         </p>
-        <p> 
+        <p class="about-text"> 
             I’m so happy and thankful that my clients trust me. It’s the greatest feeling to see their happy faces when they are looking at the new tattoos on their skin. I believe that dreams come true if you really want them to.</p>
         </p>
     </div>
 </main>
-<div class="preloader" id="preloader">
+<!-- <div class="preloader" id="preloader">
     <img src="images/preloader.png" alt="" class="preloader__img">
-</div>
+</div> -->
 <script src="js/script.min.js"></script>
 </body>
 </html>
